@@ -11,3 +11,5 @@
 - To run  ```php artisan serve```
 
 ### Let me know any further clarification i will add small loom video in case you need.
+![image](https://user-images.githubusercontent.com/61880265/225040989-acf3fd94-6ed0-41f0-99f0-9569a1fcfa4d.png)
+
