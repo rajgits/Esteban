@@ -8,5 +8,6 @@
 - Run ```composer update``` from the projects root folder
 - From the projects root folder run ```php artisan key:generate```
 - From the projects root folder run ```php artisan migrate```
+- To run  ```php artisan serve```
 
 ### Let me know any further clarification i will add small loom video in case you need.
