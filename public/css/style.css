@@ -1,0 +1,42 @@
+.app_bg{
+    background-color: #4C864A;
+    color: #ffff;
+}
+.app_color{
+    color:#4C864A;
+  }
+.nav-app{
+    color:#4C864A;
+    font-size: 26px;
+    text-decoration: none;
+}
+.app_btn{
+    width: 260px;
+    height: 58.04px;
+    left: 66px;
+    text-align: center;
+    padding: 14px;
+    top: 324px;
+    background: #F5F5F5;
+    border-radius: 10px;
+}
+.bi-three-dots-vertical {
+    font-size: 1.5rem;
+    color: #FFFF;
+  }
+  .dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .app_btn_cart{
+    width: 140px;
+    height: 40.04px;
+    left: 60px;
+    text-align: center;
+    padding: 5px;
+    top: 324px;
+    color: #ffff;
+    border-radius: 10px;
+    background: #4C864A;
+  }
+ 
