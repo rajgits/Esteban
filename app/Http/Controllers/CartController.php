@@ -9,15 +9,17 @@ class CartController extends Controller
 {
     public function addToCart(Request $request, $id)
     {
-        
+         // Get the product data from the fakestoreapi
         $productResponse = Http::get('https://fakestoreapi.com/products/'.$id);
         $product = json_decode($productResponse->getBody(), true);
 
+        // If the product doesn't exist, return a 404 error
         if (!$product) {
             abort(404);
         }
+        // Get the current cart data from the session
         $cart = session()->get('cart');
-
+        // If there is no cart data, create a new cart with the product added
         if (!$cart) {
             $cart = [
                 $id => [
@@ -27,9 +29,9 @@ class CartController extends Controller
                     'image' => $product['image']
                 ]
             ];
-
+            // Store the new cart data in the session
             session()->put('cart', $cart);
-
+            // Redirect to the cart page with a success message
             return redirect('cart')->with('success', 'Item added to cart successfully!');
         }
 
@@ -61,9 +63,9 @@ class CartController extends Controller
         return redirect('/')->with('success', 'Cart cleared successfully!');
 
     }
-
+    
     public function viewCart(Request $request, $id){
-        
+        // Get the product data from the fakestoreapi
         $productResponse = Http::get('https://fakestoreapi.com/products/'.$id);
         $product = json_decode($productResponse->getBody(), true);
 
